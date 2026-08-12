@@ -1,0 +1,23 @@
+# Vehicle
+(vehicle_id (PK)
+year
+make
+model
+body
+transmission)
+
+# Sold_Vehicle
+(VIN (PK)
+vehicle_id (FK)
+state)
+
+# Details
+(VIN (PK/FK)
+odometer
+condition)
+
+# Accounts
+(VIN (PK/FK)
+MMR
+sellingprice
+saledate)

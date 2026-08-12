@@ -1,0 +1,61 @@
+Total 16 columns are there
+
+3 columns do not contain any NULL values
+    - Year
+    - State
+    - Seller
+
+
+Columns with NULL values
+    make            10301 - investigation needed
+    model           10399 - investigation needed
+    trim            10651 - investigation needed
+    body            13195 - investigation needed
+    transmission    65352 - investigation needed
+    vin                 4 - can be ignored due to size
+    condition       11820 - investigation needed
+    odometer           94 - can be ignored due to size
+    color             749 - can be ignored due to size
+    interior          749 - can be ignored due to size
+    mmr                38 - can be ignored due to size
+    sellingprice       12 - can be ignored due to size
+    saledate           12 - can be ignored due to size
+
+
+Wherever there is null value in 'make', 3 columns also have null values:
+    - trim
+    - body
+    - model
+   
+    make            10301 - investigation needed
+    model           10399 - investigation needed
+    trim            10651 - investigation needed
+    body            13195 - investigation needed
+    transmission    65352 - investigation needed
+    vin                 4 - can be ignored due to size
+    condition       11820 - investigation needed
+    odometer           94 - can be ignored due to size
+    color             749 - can be ignored due to size
+    interior          749 - can be ignored due to size
+    mmr                38 - can be ignored due to size
+    sellingprice       12 - can be ignored due to size
+    saledate           12 - can be ignored due to size
+
+* VIN 
+
+NUll - 4
+duplicated - 8539
+table duplicated - 8539
+
+- remove 8539 rows
+- remove 4 null rows
+
+* STATE 
+
+total = 64
+valid = 38
+invalid = 26
+
+- remove invalid state rows
+
+
