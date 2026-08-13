@@ -58,4 +58,10 @@ invalid = 26
 
 - remove invalid state rows
 
+* saledate
+
+38 NULL cells
+
+- remove them
+
 
