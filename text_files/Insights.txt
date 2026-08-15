@@ -1,0 +1,19 @@
+1. Top 10 companies by Revenue and units sold
+2. Top 10 companies by body
+3. Top 10 companies by State
+
+4. Company wise Body (which company produce which body type the most)
+    - Here we will take 10 companies (based on most units sold)
+5. Body wise Company (which bodytype produce by which company the most)
+    - Here we will take 10 bodytype (based on most units sold)
+6. Top 10 Seller by revenue
+7. Top 10 Seller by companies 
+    - Here we will take 10 companies (based on most units sold, all over)
+8. Top 10 Seller by units sold
+9. Top 10 companies based on percentage difference in (MMR & selling price) (increasing and decreasing order)
+10. Top 10 Sellers with highest avg. condition
+11. Top 10 States by units sold
+12. Top 10 states by revenue
+13. Month wise top selling companies
+14. Month wise top companies by revenue
+15. Month wise top models

@@ -16,6 +16,29 @@ because there are almost similar NULL cells parallely
 
 3. Remove all duplicated rows against 'vin'
 
-NEXT DAY 
+4. Remove Null rows of models (93 - due to size)
 
-* check dependency of columns 
+15-08 
+
+learn new things
+
+1. Mapping - 
+
+body_map = (
+    dataset.dropna(subset = ["body"])
+    .groupby(["year", "make", "model", "trim"])["body"]
+    .agg(lambda x: x.iloc[0] if x.nunique() == 1 else None) # .agg() - used to create aggregate function and show its result
+    )
+
+2. Applying -
+
+mask = dataset["body"].isna()
+
+dataset.loc[mask, "body"] = (dataset.loc[mask,["year", "make", "model", "trim"]]
+                             .apply(lambda row: body_map.get(tuple(row)), axis = 1))
+
+
+Task to start 16-08
+
+- Revise these things, understand it properly, and then apply the same concept in 'condition'
+- reduce null values of 'condition'
