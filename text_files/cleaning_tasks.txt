@@ -34,7 +34,7 @@ body_map = (
 
 mask = dataset["body"].isna()
 
-dataset.loc[mask, "body"] = (dataset.loc[mask,["year", "make", "model", "trim"]]
+dataset.loc[mask, "body"] = (dataset.loc[mask, ["year", "make", "model", "trim"]]
                              .apply(lambda row: body_map.get(tuple(row)), axis = 1))
 
 
