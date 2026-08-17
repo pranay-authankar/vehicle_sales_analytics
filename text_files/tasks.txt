@@ -42,3 +42,11 @@ Task to start 16-08
 
 - Revise these things, understand it properly, and then apply the same concept in 'condition'
 - reduce null values of 'condition'
+
+
+Task for 18-08
+
+1. Confirm What to analyse in structured way without single confusion
+2. Start Analysisng in VS code, plot charts, save it in folder
+3. Write notes/observation in txt files to keep records
+4. Keep updating tasks when completed and assign next task immediately.

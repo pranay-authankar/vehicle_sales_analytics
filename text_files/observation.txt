@@ -1,0 +1,4 @@
+201 records had a vehicle age of -1. Inspection showed 
+these were likely next-model-year vehicles sold before 
+the calendar year of the model year.
+Since no ages below -1 were present, the records were retained.
