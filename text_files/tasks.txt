@@ -1,52 +1,13 @@
-1. Remove NULL values rows which are negligible in count
 
-    vin               
-    odometer           
-    color             
-    interior           
-    mmr                
-    sellingprice       
-    saledate
+plt.gca().yaxis.set_major_formatter(
+    ticker.FuncFormatter(lambda x, pos: f"{x/1000:.1f}K")
+)
 
-2. Remove NULL rows from
+plt.bar_label(bars, 
+              labels = [f"{x/1000:.2f}K" for x in bars.datavalues])
 
-make, trim, body, model
+.reset_index(name = "units_sold")
 
-because there are almost similar NULL cells parallely
+plt.figure(figsize = (10, 5))
 
-3. Remove all duplicated rows against 'vin'
-
-4. Remove Null rows of models (93 - due to size)
-
-15-08 
-
-learn new things
-
-1. Mapping - 
-
-body_map = (
-    dataset.dropna(subset = ["body"])
-    .groupby(["year", "make", "model", "trim"])["body"]
-    .agg(lambda x: x.iloc[0] if x.nunique() == 1 else None) # .agg() - used to create aggregate function and show its result
-    )
-
-2. Applying -
-
-mask = dataset["body"].isna()
-
-dataset.loc[mask, "body"] = (dataset.loc[mask, ["year", "make", "model", "trim"]]
-                             .apply(lambda row: body_map.get(tuple(row)), axis = 1))
-
-
-Task to start 16-08
-
-- Revise these things, understand it properly, and then apply the same concept in 'condition'
-- reduce null values of 'condition'
-
-
-Task for 18-08
-
-1. Confirm What to analyse in structured way without single confusion
-2. Start Analysisng in VS code, plot charts, save it in folder
-3. Write notes/observation in txt files to keep records
-4. Keep updating tasks when completed and assign next task immediately.
+Read about these new things first, then move ahead
