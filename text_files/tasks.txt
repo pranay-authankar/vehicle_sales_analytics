@@ -1,3 +1,4 @@
+29-08
 
 plt.gca().yaxis.set_major_formatter(
     ticker.FuncFormatter(lambda x, pos: f"{x/1000:.1f}K")
@@ -11,3 +12,9 @@ plt.bar_label(bars,
 plt.figure(figsize = (10, 5))
 
 Read about these new things first, then move ahead
+
+30-08
+
+.idxmax()
+
+Look at chatgpt about Patch module and continue working
