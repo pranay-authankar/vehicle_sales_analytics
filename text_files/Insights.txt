@@ -4,8 +4,8 @@
 3. Top 10 highest units sold company (all time).
 4. Top 10 unit sold states (all time).
 5. Median age of vehicle (all time).
-6. Highest units sold vehicle [make, body, trim] (all time).
+6. Highest units sold vehicle [make, body] (all time).
+7. Past 10 years year wise, leading company in units sold.
+8. Past year (all time) leading compaies distribution.
 
-6. Past 10 years year wise, leading company in units sold.
-7. Top 10 cars state distribution.
-8. Top 10 states vehicle distribution (make / body / trim).
+9. 
