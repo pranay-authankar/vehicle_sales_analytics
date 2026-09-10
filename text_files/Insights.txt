@@ -8,4 +8,9 @@
 7. Past 10 years year wise, leading company in units sold.
 8. Past year (all time) leading compaies distribution.
 
-9. 
+9. Condition of vehicles with respect to Age.
+10. Units Sold by Age.
+11. Revenue vs Age.
+12. Effect of Age in Change in MMR and Selling Price.
+
+13. Top 10 body type and which company sold the body type.

@@ -29,6 +29,6 @@ plt.bar_label(bars,
 
 __________________________________________
 
-31-08
+10-09
 
-Decide new insights
+.isin(top_10_body)
