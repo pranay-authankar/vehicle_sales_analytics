@@ -1,12 +1,12 @@
 
-1. Total revenue through years.
-2. Total units sold through years.
-3. Top 10 highest units sold company (all time).
-4. Top 10 unit sold states (all time).
-5. Median age of vehicle (all time).
-6. Highest units sold vehicle [make, body] (all time).
+1. Total revenue.
+2. Total units sold.
+3. Top 10 highest units sold company.
+4. Top 10 unit sold states.
+5. Median age of vehicle.
+6. Highest units sold vehicle [make, body].
 7. Past 10 years year wise, leading company in units sold.
-8. Past year (all time) leading compaies distribution.
+8. Past year built leading compaies distribution.
 
 9. Condition of vehicles with respect to Age.
 10. Units Sold by Age.
@@ -19,3 +19,7 @@
 
 16. Effect of odometer in condition.
 17. Top 10 body type by states
+
+18. Top companies with Max mmr-sp difference (Absolute, Below MMR, Above MMR)
+19. Top sellers with Max mmr-sp difference (Absolute, Below MMR, Above MMR)
+

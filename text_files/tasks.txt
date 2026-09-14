@@ -32,3 +32,9 @@ __________________________________________
 10-09
 
 .isin(top_10_body)
+
+.set_index()
+.reindex()
+.reset_index()
+
+.assign()
