@@ -4,99 +4,56 @@
 
 This project is an end-to-end **data analytics exploration of vehicle sales data**, covering data cleaning, exploratory analysis, visualization, and business intelligence.
 
-The project follows:
-
 **Clean → Explore → Analyze → Visualize → Understand**
 
 ---
 
-## 🔍 What This Project Explores
+## 🔍 What I Analyzed
 
-* 📈 Sales and revenue trends
-* 🚘 Vehicle age, condition, mileage, make, model, and body type
-* 💰 MMR vs actual selling price
-* 🏢 Company and seller performance
-* 🌎 State-wise and regional sales patterns
-* 📊 Relationships between vehicle characteristics and pricing
+The project explores the vehicle market from four perspectives:
 
----
+### 📈 Sales & Market
 
-## 🧹 Data Preparation
-
-The dataset was prepared before analysis by:
-
-* Handling missing values
-* Investigating missing `body`, `transmission`, and `condition`
-* Removing duplicate VIN records
-* Converting `saledate` into datetime format
-* Creating a **vehicle age** feature
-* Investigating unusual values and data inconsistencies
-
----
-
-## 📊 Exploratory Data Analysis
-
-The main analytical work was performed using **Python, Pandas, NumPy and Matplotlib**.
-
-The analysis covers:
-
-### Sales & Market
-
-* Annual revenue and units sold
+* Revenue and units sold over time
 * Top companies and sellers
 * State-wise sales
 * Body-type distribution
 
-### Vehicle Analysis
+### 🚘 Vehicles
 
-* Vehicle age
-* Condition
-* Make & model
-* Odometer
-* Body type
-* Year-wise patterns
+* Vehicle age and condition
+* Make, model and body type
+* Odometer patterns
+* Year-wise vehicle trends
 
-### Pricing Analysis
+### 💰 Pricing
 
-* MMR vs selling price
+* MMR vs actual selling price
 * Price gap analysis
-* Selling price by vehicle age
-* Selling price by condition
-* Selling price by odometer range
+* Selling price vs vehicle age
+* Selling price vs condition
+* Selling price vs odometer
 
-### Company & Seller Analysis
+### 🏢 Companies & Sellers
 
-* Top companies by sales and revenue
-* Top sellers by sales and revenue
+* Companies ranked by sales and revenue
+* Sellers ranked by sales and revenue
 * Company–seller relationships
 * Seller performance across states
 
 ---
 
-## 💰 MMR vs Selling Price
+## 🧹 Data Preparation
 
-One of the key parts of the project is comparing:
+Before analysis, the dataset was cleaned and validated by handling missing values, removing duplicate VIN records, converting dates, creating derived features such as **vehicle age**, and investigating unusual data values.
 
-**MMR** → market/reference valuation
-**Selling Price** → actual recorded transaction price
-
-The analysis also uses:
-
-```text
-Price Gap = Selling Price − MMR
-```
-
-This helps explore vehicles selling **above, near, or below their MMR**.
-
-> The price gap is not profit; it only represents the difference between selling price and MMR.
+The cleaned data was then used throughout the analysis.
 
 ---
 
 ## 📈 Visualizations
 
-The `charts/` folder contains the **Matplotlib visualizations created during the analysis**.
-
-These charts provide the visual evidence behind the patterns explored in the notebook.
+The `charts/` folder contains the **Matplotlib visualizations** created during the analysis.
 
 👉 **[Explore the charts](charts/)**
 
@@ -104,7 +61,7 @@ These charts provide the visual evidence behind the patterns explored in the not
 
 ## 📓 Analysis Notebook
 
-The `notebook/` folder contains the main analytical workflow — from data inspection and cleaning to exploration and visualization.
+The `notebook/` folder contains the main analytical workflow, including data preparation, exploration, calculations, and visualization.
 
 👉 **[Explore the notebook](notebook/)**
 
@@ -112,14 +69,14 @@ The `notebook/` folder contains the main analytical workflow — from data inspe
 
 ## 📊 Power BI Dashboard
 
-The analysis was also transformed into a **4-page Power BI dashboard**:
+The analysis was also brought together into a **4-page Power BI dashboard**:
 
 1. **Executive Overview**
 2. **Vehicle & Market Analysis**
 3. **Company & Seller Analysis**
 4. **Pricing & Valuation Analysis**
 
-Because the Power BI report cannot currently be published online, **dashboard screenshots are included in the `powerBI/` folder**.
+Since the report cannot currently be published online, dashboard screenshots are available in the `powerBI/` folder.
 
 👉 **[Explore the Power BI dashboard](powerBI/)**
 
@@ -149,4 +106,4 @@ vehicle_sales_analytics/
 
 **Data Analytics | Python | Data Visualization | Power BI**
 
-> **The charts show the patterns. The notebook explains them. The dashboard brings them together.**
+> **The analysis is in the notebook. The patterns are in the charts. The dashboard brings the story together.**
