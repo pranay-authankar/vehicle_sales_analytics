@@ -78,7 +78,7 @@ The analysis was also brought together into a **4-page Power BI dashboard**:
 
 Since the report cannot currently be published online, dashboard screenshots are available in the `powerBI/` folder.
 
-👉 **[Explore the Power BI dashboard](powerBI/)**
+👉 **[Explore the Power BI dashboard](power_bi/)**
 
 ---
 
