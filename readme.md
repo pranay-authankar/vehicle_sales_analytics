@@ -1,159 +1,145 @@
 # 🚗 Vehicle Sales Analytics
 
-### From raw vehicle transactions to meaningful market insights.
+### Exploring vehicle sales, pricing, companies, sellers, and market patterns through data.
 
-This project explores a large vehicle sales dataset to understand **sales trends, vehicle characteristics, pricing, companies, sellers, and market behavior**.
+This project is an end-to-end **data analytics exploration of vehicle sales data**, covering data cleaning, exploratory analysis, visualization, and business intelligence.
 
-Rather than jumping straight into a dashboard, the project focuses on the complete analytics workflow:
+The project follows:
 
-**Clean → Explore → Analyze → Visualize → Interpret**
-
----
-
-## 🔍 What I Explored
-
-The analysis investigates questions such as:
-
-* Which companies and sellers sell the most vehicles?
-* Which companies generate the highest revenue?
-* How does **vehicle age** affect sales, revenue, and condition?
-* How does **odometer reading** relate to selling price?
-* How closely does **MMR** compare with the actual selling price?
-* Which states and body types dominate the market?
-* How do vehicle **condition and age** relate to pricing?
+**Clean → Explore → Analyze → Visualize → Understand**
 
 ---
 
-## 🧹 Data Cleaning & Preparation
+## 🔍 What This Project Explores
 
-Before analysis, the dataset was carefully prepared by:
+* 📈 Sales and revenue trends
+* 🚘 Vehicle age, condition, mileage, make, model, and body type
+* 💰 MMR vs actual selling price
+* 🏢 Company and seller performance
+* 🌎 State-wise and regional sales patterns
+* 📊 Relationships between vehicle characteristics and pricing
+
+---
+
+## 🧹 Data Preparation
+
+The dataset was prepared before analysis by:
 
 * Handling missing values
-* Investigating missing `body`, `transmission`, and `condition` data
+* Investigating missing `body`, `transmission`, and `condition`
 * Removing duplicate VIN records
-* Converting `saledate` into a usable datetime format
-* Creating **vehicle age** as a derived feature
-* Validating unusual values instead of blindly removing them
-
-The cleaned data was then used for further analysis and visualization.
+* Converting `saledate` into datetime format
+* Creating a **vehicle age** feature
+* Investigating unusual values and data inconsistencies
 
 ---
 
 ## 📊 Exploratory Data Analysis
 
-Most of the analytical work was performed using **Python, Pandas, NumPy and Matplotlib**.
+The main analytical work was performed using **Python, Pandas, NumPy and Matplotlib**.
 
-The notebook explores:
+The analysis covers:
 
-### 📈 Sales & Revenue
+### Sales & Market
 
-* Annual revenue trends
-* Annual units sold
-* Top companies
-* Top sellers
+* Annual revenue and units sold
+* Top companies and sellers
 * State-wise sales
+* Body-type distribution
 
-### 🚘 Vehicle Analysis
+### Vehicle Analysis
 
 * Vehicle age
-* Vehicle condition
+* Condition
 * Make & model
-* Body type
 * Odometer
+* Body type
 * Year-wise patterns
 
-### 💰 Pricing Analysis
+### Pricing Analysis
 
 * MMR vs selling price
-* Price differences across companies
+* Price gap analysis
 * Selling price by vehicle age
 * Selling price by condition
 * Selling price by odometer range
 
-### 🏢 Company & Seller Analysis
+### Company & Seller Analysis
 
-* Top companies by units sold
-* Top companies by revenue
-* Top sellers by units sold
-* Top sellers by revenue
+* Top companies by sales and revenue
+* Top sellers by sales and revenue
 * Company–seller relationships
-* State-wise seller patterns
+* Seller performance across states
 
 ---
 
-## 📉 Visual Analysis
+## 💰 MMR vs Selling Price
 
-The `charts/` folder contains the visualizations created during the analysis.
+One of the key parts of the project is comparing:
 
-These charts make it easier to see patterns that are difficult to notice from raw data alone.
+**MMR** → market/reference valuation
+**Selling Price** → actual recorded transaction price
 
-**Explore → [`charts/`](charts/)**
-
----
-
-## 📓 Analysis Notebook
-
-The complete analytical workflow is available in the `notebook/` folder.
-
-It contains the progression from:
-
-**data inspection → cleaning → transformation → analysis → visualization**
-
-**Explore → [`notebook/`](notebook/)**
-
----
-
-## 💡 One Interesting Part: MMR vs Selling Price
-
-A major part of the analysis compares:
-
-> **MMR — a market/reference valuation**
-> **Selling Price — the actual recorded transaction price**
-
-I also examined the difference:
+The analysis also uses:
 
 ```text
 Price Gap = Selling Price − MMR
 ```
 
-This helps identify patterns where vehicles were sold **above, near, or below their MMR**.
+This helps explore vehicles selling **above, near, or below their MMR**.
 
-> Price gap is not profit — it only represents the difference between selling price and MMR.
+> The price gap is not profit; it only represents the difference between selling price and MMR.
 
 ---
 
-## 📊 Power BI
+## 📈 Visualizations
 
-The analysis was also brought together into a Power BI dashboard covering:
+The `charts/` folder contains the **Matplotlib visualizations created during the analysis**.
 
-**Executive Overview → Vehicle & Market → Company & Seller → Pricing & Valuation**
+These charts provide the visual evidence behind the patterns explored in the notebook.
 
-Since the report could not currently be published through Power BI, dashboard screenshots are included in the repository rather than linking to an unavailable live report.
+👉 **[Explore the charts](charts/)**
+
+---
+
+## 📓 Analysis Notebook
+
+The `notebook/` folder contains the main analytical workflow — from data inspection and cleaning to exploration and visualization.
+
+👉 **[Explore the notebook](notebook/)**
+
+---
+
+## 📊 Power BI Dashboard
+
+The analysis was also transformed into a **4-page Power BI dashboard**:
+
+1. **Executive Overview**
+2. **Vehicle & Market Analysis**
+3. **Company & Seller Analysis**
+4. **Pricing & Valuation Analysis**
+
+Because the Power BI report cannot currently be published online, **dashboard screenshots are included in the `powerBI/` folder**.
+
+👉 **[Explore the Power BI dashboard](powerBI/)**
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Tool                 | Purpose                                 |
-| -------------------- | --------------------------------------- |
-| **Python**           | Analysis & preprocessing                |
-| **Pandas**           | Data cleaning & manipulation            |
-| **NumPy**            | Numerical analysis                      |
-| **Matplotlib**       | Data visualization                      |
-| **Jupyter Notebook** | Analytical workflow                     |
-| **Power BI**         | Interactive dashboard                   |
-| **GitHub**           | Project documentation & version control |
+**Python · Pandas · NumPy · Matplotlib · Jupyter Notebook · Power BI · DAX · GitHub**
 
 ---
 
-## 📁 Repository
+## 📁 Repository Structure
 
 ```text
 vehicle_sales_analytics/
 │
-├── charts/       → Analysis visualizations
-├── notebook/     → Complete analysis workflow
-├── text_files/   → Supporting project files
+├── charts/        → Matplotlib visualizations
+├── notebook/      → Analysis & data preparation
+├── powerBI/       → Power BI dashboard screenshots
+├── text_files/    → Supporting project files
 └── README.md
 ```
 
@@ -161,6 +147,6 @@ vehicle_sales_analytics/
 
 ### 👨‍💻 Built by Pranay Authankar
 
-**Data Analytics • Python • Pandas • Data Visualization • Power BI**
+**Data Analytics | Python | Data Visualization | Power BI**
 
-> **The dashboard is the final layer. The real story is in the analysis behind it.**
+> **The charts show the patterns. The notebook explains them. The dashboard brings them together.**
